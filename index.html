@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rui Yan | LLM Research · Skywork</title>
+  <meta name="description" content="Rui Yan is an industry researcher at Skywork, Kunlun, working on LLM post-training, reinforcement learning, reward modeling and reasoning.">
+  <link rel="canonical" href="https://yanrui27.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Rui Yan — LLM Research">
+  <meta property="og:description" content="LLM post-training, reinforcement learning, reward modeling and reasoning. Skywork / Kunlun.">
+  <meta property="og:url" content="https://yanrui27.github.io/">
+  <meta name="theme-color" content="#faf9f6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b3a53'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='white'%3ERY%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--paper:#faf9f6;--ink:#202c35;--muted:#63717b;--accent:#245a7c;--line:#dedfd9;--wash:#eeefea;--serif:Georgia,'Times New Roman',serif;--sans:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 var(--sans);-webkit-font-smoothing:antialiased}a{color:var(--accent);text-decoration:none;text-underline-offset:4px}a:hover{text-decoration:underline}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}button{font:inherit}::selection{background:#d7e5ed}body[data-lang="en"] [lang="zh-CN"],body[data-lang="zh-CN"] [lang="en"]{display:none!important}
+    .shell{width:min(1056px,calc(100% - 80px));margin:0 auto}.skip{position:absolute;left:24px;top:-90px;background:var(--ink);color:white;padding:10px 18px;z-index:9}.skip:focus{top:12px}.topbar{height:104px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{display:flex;align-items:center;gap:12px;font-weight:600;letter-spacing:-.2px;color:var(--ink)}.monogram{height:36px;width:36px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font:15px var(--serif)}.navigation{display:flex;align-items:center;gap:28px;font-size:13px}.navigation a{color:var(--muted)}.language{border:1px solid var(--line);border-radius:4px;background:transparent;color:var(--ink);padding:4px 11px;cursor:pointer;font-size:12px}.language:hover{border-color:var(--muted)}
+    .hero{padding:78px 0 65px;display:grid;grid-template-columns:1fr 242px;gap:74px;align-items:center}.eyebrow{font:11px/1.6 var(--sans);font-weight:600;text-transform:uppercase;letter-spacing:1.7px;color:var(--accent);margin:0 0 17px}.hero h1{font:normal clamp(54px,6vw,76px)/1.05 var(--serif);letter-spacing:-3px;margin:0 0 18px}.role{font-size:16px;color:var(--muted);margin:0 0 22px}.hero-description{font-size:21px;line-height:1.65;max-width:610px;letter-spacing:-.35px;margin:0 0 26px}.socials{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;font-weight:500}.socials a span.arrow{font-size:15px;margin-left:3px}.research-note{border-left:1px solid var(--line);padding-left:27px}.research-note .small-label{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin:0 0 17px}.research-note ol{list-style:none;margin:0;padding:0}.research-note li{font-size:13px;line-height:1.5;padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:12px}.research-note li:last-child{border:0}.research-note .num{font-size:10px;color:#89949a;padding-top:3px;font-variant-numeric:tabular-nums}.research-note li span:last-child{max-width:170px}
+    .section{border-top:1px solid var(--line);padding:42px 0 46px;display:grid;grid-template-columns:188px 1fr;gap:28px}.section-heading h2{font:normal 25px/1.3 var(--serif);letter-spacing:-.5px;margin:0 0 9px}.section-heading .caption{font-size:11px;color:var(--muted);margin:0}.about-copy p{margin:0 0 15px}.about-copy p:last-child{margin-bottom:0}.about-copy strong{font-weight:600}.interests{color:var(--muted);font-size:14px}
+    .publications{padding-bottom:14px}.paper{display:grid;grid-template-columns:54px 1fr;gap:18px;padding:0 0 30px;margin:0 0 30px;border-bottom:1px solid var(--line)}.paper:last-child{border:0;margin-bottom:0}.paper-year{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;padding-top:4px}.paper h3{font-size:17px;line-height:1.5;font-weight:600;letter-spacing:-.25px;margin:0 0 9px}.paper h3 a{color:var(--ink)}.authors{font-size:12px;line-height:1.85;color:var(--muted);margin:0 0 10px}.authors strong{color:var(--ink);font-weight:600}.paper-description{font-size:13px;line-height:1.75;margin:0 0 12px;color:#4f5e68}.paper-links{display:flex;align-items:center;flex-wrap:wrap;gap:15px;font-size:11px;line-height:1.7}.venue{display:inline-block;background:#e7ede8;color:#405d48;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600}.preprint{background:var(--wash);color:var(--muted)}
+    .contact-copy p{margin:0 0 14px}.email{font-size:19px;letter-spacing:-.3px}.contact-note{font-size:13px;color:var(--muted)}footer{padding:22px 0 36px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:11px}footer a{color:var(--muted)}
+    @media(min-width:1400px){.hero{padding-top:92px;padding-bottom:78px}}
+    @media(max-width:800px){.shell{width:calc(100% - 48px)}.hero{gap:35px;grid-template-columns:1fr 202px}.hero-description{font-size:19px}.research-note{padding-left:20px}.section{grid-template-columns:144px 1fr;gap:20px}.navigation{gap:18px}}
+    @media(max-width:600px){.shell{width:calc(100% - 40px)}.topbar{height:80px}.navigation{gap:16px}.navigation .nav-contact{display:none}.wordmark{font-size:14px;gap:8px}.monogram{height:30px;width:30px;font-size:12px}.navigation a{font-size:12px}.hero{padding:49px 0 39px;display:block}.hero h1{font-size:59px;letter-spacing:-2px}.role{font-size:14px}.hero-description{font-size:19px;line-height:1.7;margin-bottom:23px}.research-note{margin-top:33px;padding-left:17px}.research-note .small-label{margin-bottom:6px}.research-note ol{display:flex;flex-direction:column;gap:0}.research-note li{padding:6px 0;border:0}.research-note li span:last-child{max-width:none}.section{display:block;padding:30px 0}.section-heading{margin-bottom:24px}.section-heading h2{font-size:26px}.section-heading .caption{margin-top:5px}.about-copy{font-size:15px}.paper{grid-template-columns:40px 1fr;gap:10px;padding-bottom:25px;margin-bottom:25px}.paper h3{font-size:16px}.authors{font-size:11px}.paper-description{font-size:12px}.email{font-size:18px}footer{gap:20px;font-size:10px;align-items:flex-start}.socials{gap:21px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.navigation,.skip{display:none}.shell{width:100%}.hero{padding-top:32px;padding-bottom:32px}.topbar{height:55px}.section{break-inside:avoid}.paper{break-inside:avoid}body{background:white;font-size:12px}footer{padding-bottom:0}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Rui Yan","url":"https://yanrui27.github.io/","jobTitle":"Industry Researcher","affiliation":{"@type":"Organization","name":"Skywork / Kunlun"},"sameAs":["https://github.com/yanrui27","https://huggingface.co/ruiyan","https://scholar.google.com/citations?user=BuIJQ1UAAAAJ"]}</script>
+</head>
+<body data-lang="en">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="wordmark" href="#main" aria-label="Rui Yan, home"><span class="monogram" aria-hidden="true">RY</span>Rui Yan</a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#about"><span lang="en">About</span><span lang="zh-CN">关于</span></a>
+        <a href="#publications"><span lang="en">Publications</span><span lang="zh-CN">论文</span></a>
+        <a class="nav-contact" href="#contact"><span lang="en">Contact</span><span lang="zh-CN">联系</span></a>
+        <button class="language" type="button" aria-label="Switch to Chinese">中文</button>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <div>
+          <p class="eyebrow"><span lang="en">Large Language Model Research</span><span lang="zh-CN">大语言模型研究</span></p>
+          <h1>Rui Yan</h1>
+          <p class="role"><span lang="en">Industry Researcher</span><span lang="zh-CN">研究员</span> <span aria-hidden="true">·</span> Skywork / Kunlun</p>
+          <p class="hero-description"><span lang="en">Advancing language models through reinforcement learning, better rewards, and stronger reasoning.</span><span lang="zh-CN">通过强化学习、奖励建模与推理能力研究，探索大语言模型的能力边界。</span></p>
+          <div class="socials">
+            <a href="mailto:rui.yan@kunlun-inc.com"><span lang="en">Email</span><span lang="zh-CN">邮箱</span><span class="arrow" aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=BuIJQ1UAAAAJ">Google Scholar<span class="arrow" aria-hidden="true">↗</span></a>
+            <a href="https://github.com/yanrui27">GitHub<span class="arrow" aria-hidden="true">↗</span></a>
+            <a href="https://huggingface.co/ruiyan">Hugging Face<span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="research-note" aria-label="Research areas">
+          <p class="small-label"><span lang="en">Research areas</span><span lang="zh-CN">研究方向</span></p>
+          <ol>
+            <li><span class="num">01</span><span><span lang="en">Reinforcement learning<br>&amp; LLM reasoning</span><span lang="zh-CN">强化学习与大模型推理</span></span></li>
+            <li><span class="num">02</span><span><span lang="en">Reward modeling<br>&amp; preference learning</span><span lang="zh-CN">奖励建模与偏好学习</span></span></li>
+            <li><span class="num">03</span><span><span lang="en">Software engineering<br>agents</span><span lang="zh-CN">软件工程智能体</span></span></li>
+          </ol>
+        </aside>
+      </div>
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-heading"><h2 id="about-title"><span lang="en">About</span><span lang="zh-CN">关于我</span></h2></div>
+        <div class="about-copy">
+          <p lang="en">I am an industry researcher at <strong>Skywork, Kunlun</strong>. My work focuses on the post-training of large language models, particularly reinforcement learning for reasoning, reward modeling, and learning from human preferences.</p>
+          <p lang="zh-CN">我目前在<strong>昆仑万维 Skywork</strong>从事大语言模型研究，关注模型后训练，尤其是面向推理的强化学习、奖励建模与人类偏好学习。</p>
+          <p lang="en">I have contributed to the Skywork-OR1, Skywork-Reward, Skywork-Reward-V2, and Skywork-SWE projects. Across these efforts, I am interested in how training data, reward signals, and optimization shape model capabilities.</p>
+          <p lang="zh-CN">我参与了 Skywork-OR1、Skywork-Reward、Skywork-Reward-V2 与 Skywork-SWE 等项目，关注训练数据、奖励信号和优化方法如何影响模型能力。</p>
+        </div>
+      </section>
+      <section class="section publications" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading"><h2 id="publications-title"><span lang="en">Selected<br>Publications</span><span lang="zh-CN">代表论文</span></h2><p class="caption"><a href="https://scholar.google.com/citations?user=BuIJQ1UAAAAJ"><span lang="en">Full list on Google Scholar ↗</span><span lang="zh-CN">Google Scholar 完整列表 ↗</span></a></p></div>
+        <div>
+          <article class="paper">
+            <div class="paper-year">2026</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2507.01352">Skywork-Reward-V2: Scaling Preference Data Curation via Human-AI Synergy</a></h3>
+              <p class="authors">Chris Yuhao Liu, Liang Zeng, Yuzhen Xiao, Jujie He, Jiacai Liu, Chaojie Wang, <strong>Rui Yan</strong>, Wei Shen, Fuxiang Zhang, Jiacheng Xu, Yang Liu, Yahui Zhou</p>
+              <p class="paper-description"><span lang="en">Large-scale preference data curation through human–AI collaboration, with a family of open reward models.</span><span lang="zh-CN">通过人类与 AI 协作实现大规模偏好数据筛选，并构建开源奖励模型系列。</span></p>
+              <div class="paper-links"><span class="venue">ICLR 2026</span><a href="https://arxiv.org/abs/2507.01352">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-Reward-V2">Code &amp; models ↗</a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <div class="paper-year">2025</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2506.19290">Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in LLMs</a></h3>
+              <p class="authors">Liang Zeng, Yongcong Li, Yuzhen Xiao, Changshi Li, Chris Yuhao Liu, <strong>Rui Yan</strong>, Tianwen Wei, Jujie He, Xuchen Song, Yang Liu, Yahui Zhou</p>
+              <p class="paper-description"><span lang="en">An automated data curation pipeline and a study of data scaling for software engineering agents.</span><span lang="zh-CN">面向软件工程智能体的自动化数据构建流程与数据规模规律研究。</span></p>
+              <div class="paper-links"><span class="venue preprint">arXiv 2025</span><a href="https://arxiv.org/abs/2506.19290">Paper ↗</a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <div class="paper-year">2025</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2505.22312">Skywork Open Reasoner 1 Technical Report</a></h3>
+              <p class="authors">Jujie He, Jiacai Liu, Chris Yuhao Liu, <strong>Rui Yan</strong>, Chaojie Wang, Peng Cheng, Xiaoyu Zhang, Fuxiang Zhang, Jiacheng Xu, Wei Shen, Siyuan Li, Liang Zeng, Tianwen Wei, Cheng Cheng, Bo An, Yang Liu, Yahui Zhou</p>
+              <p class="paper-description"><span lang="en">Scalable reinforcement learning for math and code reasoning, with an investigation of entropy collapse during training.</span><span lang="zh-CN">面向数学与代码推理的可扩展强化学习，以及训练过程中的熵坍缩问题研究。</span></p>
+              <div class="paper-links"><span class="venue preprint">arXiv 2025</span><a href="https://arxiv.org/abs/2505.22312">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-OR1">Code &amp; models ↗</a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <div class="paper-year">2024</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2410.18451">Skywork-Reward: Bag of Tricks for Reward Modeling in LLMs</a></h3>
+              <p class="authors">Chris Yuhao Liu, Liang Zeng, Jiacai Liu, <strong>Rui Yan</strong>, Jujie He, Chaojie Wang, Shuicheng Yan, Yang Liu, Yahui Zhou</p>
+              <p class="paper-description"><span lang="en">Data selection and filtering methods for building high-quality preference datasets and effective reward models.</span><span lang="zh-CN">通过数据选择与过滤方法，构建高质量偏好数据集和有效的奖励模型。</span></p>
+              <div class="paper-links"><span class="venue preprint">arXiv 2024</span><a href="https://arxiv.org/abs/2410.18451">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-Reward">Project ↗</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading"><h2 id="contact-title"><span lang="en">Contact</span><span lang="zh-CN">联系</span></h2></div>
+        <div class="contact-copy"><p class="contact-note"><span lang="en">For research discussions and collaboration:</span><span lang="zh-CN">研究交流与合作，可通过邮箱联系：</span></p><a class="email" href="mailto:rui.yan@kunlun-inc.com">rui.yan@kunlun-inc.com ↗</a></div>
+      </section>
+    </main>
+    <footer><span>© 2026 Rui Yan</span><a href="https://github.com/yanrui27/yanrui27.github.io"><span lang="en">Website source</span><span lang="zh-CN">网站源码</span> ↗</a></footer>
+  </div>
+  <script>
+    const languageButton = document.querySelector('.language');
+    languageButton.addEventListener('click', () => {
+      const next = document.body.dataset.lang === 'en' ? 'zh-CN' : 'en';
+      document.body.dataset.lang = next;
+      document.documentElement.lang = next;
+      languageButton.textContent = next === 'en' ? '中文' : 'EN';
+      languageButton.setAttribute('aria-label', next === 'en' ? 'Switch to Chinese' : 'Switch to English');
+    });
+  </script>
+</body>
+</html>
