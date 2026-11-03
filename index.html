@@ -24,6 +24,9 @@
     @media(max-width:800px){.shell{width:calc(100% - 48px)}.hero{gap:35px;grid-template-columns:1fr 202px}.hero-description{font-size:19px}.research-note{padding-left:20px}.section{grid-template-columns:144px 1fr;gap:20px}.navigation{gap:18px}}
     @media(max-width:600px){.shell{width:calc(100% - 40px)}.topbar{height:80px}.navigation{gap:16px}.navigation .nav-contact{display:none}.wordmark{font-size:14px;gap:8px}.monogram{height:30px;width:30px;font-size:12px}.navigation a{font-size:12px}.hero{padding:49px 0 39px;display:block}.hero h1{font-size:59px;letter-spacing:-2px}.role{font-size:14px}.hero-description{font-size:19px;line-height:1.7;margin-bottom:23px}.research-note{margin-top:33px;padding-left:17px}.research-note .small-label{margin-bottom:6px}.research-note ol{display:flex;flex-direction:column;gap:0}.research-note li{padding:6px 0;border:0}.research-note li span:last-child{max-width:none}.section{display:block;padding:30px 0}.section-heading{margin-bottom:24px}.section-heading h2{font-size:26px}.section-heading .caption{margin-top:5px}.about-copy{font-size:15px}.paper{grid-template-columns:40px 1fr;gap:10px;padding-bottom:25px;margin-bottom:25px}.paper h3{font-size:16px}.authors{font-size:11px}.paper-description{font-size:12px}.email{font-size:18px}footer{gap:20px;font-size:10px;align-items:flex-start}.socials{gap:21px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.navigation,.skip{display:none}.shell{width:100%}.hero{padding-top:32px;padding-bottom:32px}.topbar{height:55px}.section{break-inside:avoid}.paper{break-inside:avoid}body{background:white;font-size:12px}footer{padding-bottom:0}}
+
+    .scholar-metrics{display:flex;align-items:center;gap:35px;border-top:1px solid var(--line);padding-top:23px;margin-top:25px}.scholar-metrics>div{display:flex;flex-direction:column}.scholar-metrics strong{font:normal 29px/1.2 var(--serif);letter-spacing:-.6px}.scholar-metrics span{font-size:10px;color:var(--muted);margin-top:5px}.scholar-metrics p{font-size:10px;line-height:1.8;color:var(--muted);margin:0 0 0 auto}.full-authors{margin:-5px 0 12px}.full-authors summary{font-size:11px;cursor:pointer;color:var(--accent)}.full-authors p{margin:8px 0 0}.paper-links{column-gap:15px;row-gap:7px}
+    @media(max-width:600px){.scholar-metrics{gap:23px;flex-wrap:wrap}.scholar-metrics p{margin-left:0;flex-basis:100%}.scholar-metrics strong{font-size:28px}}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Rui Yan","url":"https://yanrui27.github.io/","jobTitle":"Industry Researcher","affiliation":{"@type":"Organization","name":"Skywork / Kunlun"},"sameAs":["https://github.com/yanrui27","https://huggingface.co/ruiyan","https://scholar.google.com/citations?user=BuIJQ1UAAAAJ"]}</script>
 </head>
@@ -58,7 +61,7 @@
           <ol>
             <li><span class="num">01</span><span><span lang="en">Reinforcement learning<br>&amp; LLM reasoning</span><span lang="zh-CN">强化学习与大模型推理</span></span></li>
             <li><span class="num">02</span><span><span lang="en">Reward modeling<br>&amp; preference learning</span><span lang="zh-CN">奖励建模与偏好学习</span></span></li>
-            <li><span class="num">03</span><span><span lang="en">Software engineering<br>agents</span><span lang="zh-CN">软件工程智能体</span></span></li>
+            <li><span class="num">03</span><span><span lang="en">Multimodal models<br>&amp; AI agents</span><span lang="zh-CN">多模态模型与智能体</span></span></li>
           </ol>
         </aside>
       </div>
@@ -67,12 +70,19 @@
         <div class="about-copy">
           <p lang="en">I am an industry researcher at <strong>Skywork, Kunlun</strong>. My work focuses on the post-training of large language models, particularly reinforcement learning for reasoning, reward modeling, and learning from human preferences.</p>
           <p lang="zh-CN">我目前在<strong>昆仑万维 Skywork</strong>从事大语言模型研究，关注模型后训练，尤其是面向推理的强化学习、奖励建模与人类偏好学习。</p>
-          <p lang="en">I have contributed to the Skywork-OR1, Skywork-Reward, Skywork-Reward-V2, and Skywork-SWE projects. Across these efforts, I am interested in how training data, reward signals, and optimization shape model capabilities.</p>
-          <p lang="zh-CN">我参与了 Skywork-OR1、Skywork-Reward、Skywork-Reward-V2 与 Skywork-SWE 等项目，关注训练数据、奖励信号和优化方法如何影响模型能力。</p>
+          <p lang="en">My research spans reinforcement learning for reasoning (DAPO and Skywork-OR1), reward modeling (the Skywork-Reward series), software engineering agents (Skywork-SWE), and multimodal generation (SkyReels-V4). Earlier, I worked on question answering and machine reading comprehension.</p>
+          <p lang="zh-CN">我的研究涉及推理强化学习（DAPO、Skywork-OR1）、奖励建模（Skywork-Reward 系列）、软件工程智能体（Skywork-SWE）和多模态生成（SkyReels-V4）。早期工作聚焦问答与机器阅读理解。</p>
+
+          <div class="scholar-metrics" aria-label="Google Scholar metrics as of 3 November 2026">
+            <div><strong>1,097</strong><span lang="en">Citations</span><span lang="zh-CN">引用</span></div>
+            <div><strong>8</strong><span lang="en">h-index</span><span lang="zh-CN">h 指数</span></div>
+            <div><strong>8</strong><span lang="en">i10-index</span><span lang="zh-CN">i10 指数</span></div>
+            <p><a href="https://scholar.google.com/citations?user=BuIJQ1UAAAAJ">Google Scholar</a><br><span lang="en">As of 3 Nov 2026</span><span lang="zh-CN">截至 2026 年 11 月 3 日</span></p>
+          </div>
         </div>
       </section>
       <section class="section publications" id="publications" aria-labelledby="publications-title">
-        <div class="section-heading"><h2 id="publications-title"><span lang="en">Selected<br>Publications</span><span lang="zh-CN">代表论文</span></h2><p class="caption"><a href="https://scholar.google.com/citations?user=BuIJQ1UAAAAJ"><span lang="en">Full list on Google Scholar ↗</span><span lang="zh-CN">Google Scholar 完整列表 ↗</span></a></p></div>
+        <div class="section-heading"><h2 id="publications-title"><span lang="en">Publications<br>&amp; Research</span><span lang="zh-CN">论文与研究</span></h2><p class="caption"><a href="https://scholar.google.com/citations?user=BuIJQ1UAAAAJ"><span lang="en">Google Scholar ↗</span><span lang="zh-CN">Google Scholar ↗</span></a></p></div>
         <div>
           <article class="paper">
             <div class="paper-year">2026</div>
@@ -80,7 +90,25 @@
               <h3><a href="https://arxiv.org/abs/2507.01352">Skywork-Reward-V2: Scaling Preference Data Curation via Human-AI Synergy</a></h3>
               <p class="authors">Chris Yuhao Liu, Liang Zeng, Yuzhen Xiao, Jujie He, Jiacai Liu, Chaojie Wang, <strong>Rui Yan</strong>, Wei Shen, Fuxiang Zhang, Jiacheng Xu, Yang Liu, Yahui Zhou</p>
               <p class="paper-description"><span lang="en">Large-scale preference data curation through human–AI collaboration, with a family of open reward models.</span><span lang="zh-CN">通过人类与 AI 协作实现大规模偏好数据筛选，并构建开源奖励模型系列。</span></p>
-              <div class="paper-links"><span class="venue">ICLR 2026</span><a href="https://arxiv.org/abs/2507.01352">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-Reward-V2">Code &amp; models ↗</a></div>
+              <div class="paper-links"><span class="venue">ICLR 2026</span><a href="https://arxiv.org/abs/2507.01352">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-Reward-V2">Code &amp; models ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:Y0pCki6q_DkC">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="skyreels-v4">
+            <div class="paper-year">2026</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2602.21818">SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing Model</a></h3>
+              <p class="authors">Guibin Chen, Dixuan Lin, Jiangping Yang, …, <strong>Rui Yan</strong>, …, Yahui Zhou</p><details class="full-authors"><summary><span lang="en">Full author list</span><span lang="zh-CN">完整作者列表</span></summary><p class="authors">Guibin Chen, Dixuan Lin, Jiangping Yang, Youqiang Zhang, Zhengcong Fei, Debang Li, Sheng Chen, Chaofeng Ao, Nuo Pang, Yiming Wang, Yikun Dou, Zheng Chen, Mingyuan Fan, Tuanhui Li, Mingshan Chang, Hao Zhang, Xiaopeng Sun, Jingtao Xu, Yuqiang Xie, Jiahua Wang, Zhiheng Xu, Weiming Xiong, Yuzhe Jin, Baoxuan Gu, Binjie Mao, Yunjie Yu, Jujie He, Yuhao Feng, Shiwen Tu, Chaojie Wang, <strong>Rui Yan</strong>, Wei Shen, Jingchen Wu, Peng Zhao, Xuanyue Zhong, Zhuangzhuang Liu, Kaifei Wang, Fuxiang Zhang, Weikai Xu, Wenyan Liu, Binglu Zhang, Yu Shen, Tianhui Xiong, Bin Peng, Liang Zeng, Xuchen Song, Haoxiang Guo, Peiyu Wang, Max W. Y. Lam, Chien-Hung Liu, Yahui Zhou</p></details>
+              <p class="paper-description"><span lang="en">A unified multimodal foundation model for joint video–audio generation, inpainting, and editing.</span><span lang="zh-CN">统一的多模态基础模型，支持音视频联合生成、修复与编辑。</span></p>
+              <div class="paper-links"><span class="venue preprint">arXiv 2026</span><a href="https://arxiv.org/abs/2602.21818">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:YsMSGLbcyi4C">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="dapo">
+            <div class="paper-year">2025</div>
+            <div>
+              <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/6789f033ebde742552e5db84fb5d414a-Abstract-Conference.html">DAPO: Improving Multi-Step Reasoning Abilities of Large Language Models with Direct Advantage-Based Policy Optimization</a></h3>
+              <p class="authors">Jiacai Liu, Chaojie Wang, Chris Liu, Liang Zeng, <strong>Rui Yan</strong>, Yiwen Sun, Yang Liu</p>
+              <p class="paper-description"><span lang="en">Step-level offline reinforcement learning with independently trained actor and critic models for multi-step reasoning.</span><span lang="zh-CN">面向多步推理的步骤级离线强化学习，采用独立训练的 Actor 与 Critic。</span></p>
+              <div class="paper-links"><span class="venue">NeurIPS 2025</span><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/6789f033ebde742552e5db84fb5d414a-Abstract-Conference.html">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:ufrVoPGSRksC">Scholar ↗</a></div>
             </div>
           </article>
           <article class="paper">
@@ -88,8 +116,8 @@
             <div>
               <h3><a href="https://arxiv.org/abs/2506.19290">Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in LLMs</a></h3>
               <p class="authors">Liang Zeng, Yongcong Li, Yuzhen Xiao, Changshi Li, Chris Yuhao Liu, <strong>Rui Yan</strong>, Tianwen Wei, Jujie He, Xuchen Song, Yang Liu, Yahui Zhou</p>
-              <p class="paper-description"><span lang="en">An automated data curation pipeline and a study of data scaling for software engineering agents.</span><span lang="zh-CN">面向软件工程智能体的自动化数据构建流程与数据规模规律研究。</span></p>
-              <div class="paper-links"><span class="venue preprint">arXiv 2025</span><a href="https://arxiv.org/abs/2506.19290">Paper ↗</a></div>
+              <p class="paper-description"><span lang="en">An automated data curation pipeline and a study of data scaling for software engineering agents.</span><span lang="zh-CN">面向多模态模型与智能体的自动化数据构建流程与数据规模规律研究。</span></p>
+              <div class="paper-links"><span class="venue preprint">arXiv 2025</span><a href="https://arxiv.org/abs/2506.19290">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:W7OEmFMy1HYC">Scholar ↗</a></div>
             </div>
           </article>
           <article class="paper">
@@ -98,7 +126,16 @@
               <h3><a href="https://arxiv.org/abs/2505.22312">Skywork Open Reasoner 1 Technical Report</a></h3>
               <p class="authors">Jujie He, Jiacai Liu, Chris Yuhao Liu, <strong>Rui Yan</strong>, Chaojie Wang, Peng Cheng, Xiaoyu Zhang, Fuxiang Zhang, Jiacheng Xu, Wei Shen, Siyuan Li, Liang Zeng, Tianwen Wei, Cheng Cheng, Bo An, Yang Liu, Yahui Zhou</p>
               <p class="paper-description"><span lang="en">Scalable reinforcement learning for math and code reasoning, with an investigation of entropy collapse during training.</span><span lang="zh-CN">面向数学与代码推理的可扩展强化学习，以及训练过程中的熵坍缩问题研究。</span></p>
-              <div class="paper-links"><span class="venue preprint">arXiv 2025</span><a href="https://arxiv.org/abs/2505.22312">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-OR1">Code &amp; models ↗</a></div>
+              <div class="paper-links"><span class="venue preprint">arXiv 2025</span><a href="https://arxiv.org/abs/2505.22312">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-OR1">Code &amp; models ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:IjCSPb-OGe4C">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="deepresearch">
+            <div class="paper-year">2025</div>
+            <div>
+              <h3><a href="https://github.com/SkyworkAI/Skywork-DeepResearch">Skywork-DeepResearch</a></h3>
+              <p class="authors">Skywork AI</p>
+              <p class="paper-description"><span lang="en">Deep research agents built with synthetic data and reinforcement learning. Published under the collective author Skywork AI.</span><span lang="zh-CN">结合合成数据与强化学习的深度研究智能体项目，以 Skywork AI 团队名义发布。</span></p>
+              <div class="paper-links"><span class="venue preprint">Research project · 2025</span><a href="https://github.com/SkyworkAI/Skywork-DeepResearch">Project ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:_FxGoFyzp5QC">Scholar ↗</a></div>
             </div>
           </article>
           <article class="paper">
@@ -107,7 +144,61 @@
               <h3><a href="https://arxiv.org/abs/2410.18451">Skywork-Reward: Bag of Tricks for Reward Modeling in LLMs</a></h3>
               <p class="authors">Chris Yuhao Liu, Liang Zeng, Jiacai Liu, <strong>Rui Yan</strong>, Jujie He, Chaojie Wang, Shuicheng Yan, Yang Liu, Yahui Zhou</p>
               <p class="paper-description"><span lang="en">Data selection and filtering methods for building high-quality preference datasets and effective reward models.</span><span lang="zh-CN">通过数据选择与过滤方法，构建高质量偏好数据集和有效的奖励模型。</span></p>
-              <div class="paper-links"><span class="venue preprint">arXiv 2024</span><a href="https://arxiv.org/abs/2410.18451">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-Reward">Project ↗</a></div>
+              <div class="paper-links"><span class="venue preprint">arXiv 2024</span><a href="https://arxiv.org/abs/2410.18451">Paper ↗</a><a href="https://github.com/SkyworkAI/Skywork-Reward">Project ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:qjMakFHDy7sC">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="o1">
+            <div class="paper-year">2024</div>
+            <div>
+              <h3><a href="https://huggingface.co/Skywork/Skywork-o1-Open-PRM-Qwen-2.5-7B">Skywork-o1 Open Series</a></h3>
+              <p class="authors">Jujie He, Tianwen Wei, <strong>Rui Yan</strong>, Jiacai Liu, Chaojie Wang, Yimeng Gan, Shiwen Tu, Chris Yuhao Liu, Liang Zeng, Xiaokun Wang, Boyang Wang, Yongcong Li, Fuxiang Zhang, Jiacheng Xu, Bo An, Yang Liu, Yahui Zhou</p>
+              <p class="paper-description"><span lang="en">Open reasoning models and process reward models for mathematical and code reasoning.</span><span lang="zh-CN">面向数学与代码推理的开放推理模型及过程奖励模型系列。</span></p>
+              <div class="paper-links"><span class="venue preprint">Model release · 2024</span><a href="https://huggingface.co/Skywork/Skywork-o1-Open-PRM-Qwen-2.5-7B">Project ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:WF5omc3nYNoC">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="aegcn">
+            <div class="paper-year">2024</div>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.eswa.2024.125098">Adversarial Entity Graph Convolutional Networks for Multi-hop Inference Question Answering</a></h3>
+              <p class="authors">Yongping Du, <strong>Rui Yan</strong>, Ying Hou, Yu Pei, Honggui Han</p>
+              <p class="paper-description"><span lang="en">Entity graphs and adversarial training for robust multi-hop question answering.</span><span lang="zh-CN">通过实体图与对抗训练提升多跳推理问答的鲁棒性。</span></p>
+              <div class="paper-links"><span class="venue">Expert Systems with Applications · 2024</span><a href="https://doi.org/10.1016/j.eswa.2024.125098">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:u-x6o8ySG0sC">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="yayi">
+            <div class="paper-year">2023</div>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2312.14862">YAYI 2: Multilingual Open-Source Large Language Models</a></h3>
+              <p class="authors">Yin Luo, Qingchao Kong, Nan Xu, …, <strong>Rui Yan</strong>, …, Dajun Zeng</p><details class="full-authors"><summary><span lang="en">Full author list</span><span lang="zh-CN">完整作者列表</span></summary><p class="authors">Yin Luo, Qingchao Kong, Nan Xu, Jia Cao, Bao Hao, Baoyu Qu, Bo Chen, Chao Zhu, Chenyang Zhao, Donglei Zhang, Fan Feng, Feifei Zhao, Hailong Sun, Hanxuan Yang, Haojun Pan, Hongyu Liu, Jianbin Guo, Jiangtao Du, Jingyi Wang, Junfeng Li, Lei Sun, Liduo Liu, Lifeng Dong, Lili Liu, Lin Wang, Liwen Zhang, Minzheng Wang, Pin Wang, Ping Yu, Qingxiao Li, <strong>Rui Yan</strong>, Rui Zou, Ruiqun Li, Taiwen Huang, Xiaodong Wang, Xiaofei Wu, Xin Peng, Xina Zhang, Xing Fang, Xinglin Xiao, Yanni Hao, Yao Dong, Yigang Wang, Ying Liu, Yongyu Jiang, Yungan Wang, Yuqi Wang, Zhangsheng Wang, Zhaoxin Yu, Zhen Luo, Wenji Mao, Lei Wang, Dajun Zeng</p></details>
+              <p class="paper-description"><span lang="en">An open multilingual large language model, covering pre-training, alignment, and evaluation.</span><span lang="zh-CN">开源多语言大语言模型，涵盖预训练、对齐与评测。</span></p>
+              <div class="paper-links"><span class="venue preprint">arXiv 2023</span><a href="https://arxiv.org/abs/2312.14862">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:UeHWp8X0CEIC">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="sentiment">
+            <div class="paper-year">2023</div>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.ins.2023.01.098">Sentiment Enhanced Answer Generation and Information Fusing for Product-related Question Answering</a></h3>
+              <p class="authors">Yongping Du, Xingnan Jin, <strong>Rui Yan</strong>, Jingya Yan</p>
+              <p class="paper-description"><span lang="en">Sentiment-aware answer generation that combines product reviews and product descriptions.</span><span lang="zh-CN">结合商品评论与产品描述的情感增强问答生成。</span></p>
+              <div class="paper-links"><span class="venue">Information Sciences · 2023</span><a href="https://doi.org/10.1016/j.ins.2023.01.098">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:d1gkVwhDpl0C">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="biomedical">
+            <div class="paper-year">2023</div>
+            <div>
+              <h3><a href="https://doi.org/10.1109/BIBM58861.2023.10385678">Low-Resource Efficient Multi-Stage Tuning Strategy for Biomedical Question Answering Task</a></h3>
+              <p class="authors">Binrui Wang, Yongping Du, Xingnan Jin, <strong>Rui Yan</strong>, Qi Zhang</p>
+              
+              <div class="paper-links"><span class="venue">IEEE BIBM 2023</span><a href="https://doi.org/10.1109/BIBM58861.2023.10385678">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:2osOgNQ5qMEC">Scholar ↗</a></div>
+            </div>
+          </article>
+          <article class="paper" data-key="multitask">
+            <div class="paper-year">2023</div>
+            <div>
+              <h3><a href="https://doi.org/10.1109/ICNISC60562.2023.00120">Impacts of Multi-task Adversarial Training on Machine Reading Comprehension Model</a></h3>
+              <p class="authors"><strong>Rui Yan</strong>, Yongping Du, Binrui Wang, Wenyang Guo</p>
+              
+              <div class="paper-links"><span class="venue">IEEE ICNISC 2023</span><a href="https://doi.org/10.1109/ICNISC60562.2023.00120">Paper ↗</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=BuIJQ1UAAAAJ&amp;citation_for_view=BuIJQ1UAAAAJ:9yKSN-GCB0IC">Scholar ↗</a></div>
             </div>
           </article>
         </div>
